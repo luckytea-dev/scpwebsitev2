@@ -1,0 +1,20 @@
+{
+  "name": "MTFChannel",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "min_clearance": {
+      "type": "number",
+      "default": 1
+    }
+  },
+  "required": [
+    "name",
+    "category"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "name": "MissileLaunchRequest",
+  "type": "object",
+  "properties": {
+    "requested_by_name": {
+      "type": "string"
+    },
+    "requested_by_id": {
+      "type": "string"
+    },
+    "target": {
+      "type": "string"
+    },
+    "reason": {
+      "type": "string"
+    },
+    "auth_code": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Pending",
+        "Approved",
+        "Denied"
+      ],
+      "default": "Pending"
+    },
+    "approved_by": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "requested_by_name",
+    "target",
+    "reason"
+  ]
+}

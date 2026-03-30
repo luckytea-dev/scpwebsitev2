@@ -1,0 +1,39 @@
+{
+  "name": "Document",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "item_number": {
+      "type": "string"
+    },
+    "object_class": {
+      "type": "string",
+      "enum": [
+        "Safe",
+        "Euclid",
+        "Keter",
+        "Thaumiel",
+        "Apollyon",
+        "Neutralized"
+      ]
+    },
+    "content": {
+      "type": "string"
+    },
+    "min_clearance_level": {
+      "type": "number",
+      "default": 1
+    },
+    "category": {
+      "type": "string",
+      "default": "SCP"
+    }
+  },
+  "required": [
+    "title",
+    "item_number",
+    "content"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "name": "MapMarker",
+  "type": "object",
+  "properties": {
+    "lat": {
+      "type": "number"
+    },
+    "lng": {
+      "type": "number"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "SCP",
+        "Incident",
+        "MTF",
+        "Forbidden"
+      ]
+    },
+    "notes": {
+      "type": "string"
+    },
+    "min_clearance": {
+      "type": "number",
+      "default": 1
+    }
+  },
+  "required": [
+    "lat",
+    "lng",
+    "type"
+  ]
+}

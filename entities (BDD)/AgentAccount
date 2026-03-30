@@ -1,0 +1,81 @@
+{
+  "name": "AgentAccount",
+  "type": "object",
+  "properties": {
+    "scp_id": {
+      "type": "string"
+    },
+    "password": {
+      "type": "string"
+    },
+    "full_name": {
+      "type": "string"
+    },
+    "clearance_level": {
+      "type": "number",
+      "default": 1
+    },
+    "rank": {
+      "type": "string",
+      "default": "Recrue"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "ACTIVE",
+        "K.I.A"
+      ],
+      "default": "ACTIVE"
+    },
+    "department": {
+      "type": "string",
+      "default": "D\u00e9partement de la S\u00e9curit\u00e9"
+    },
+    "is_mtf": {
+      "type": "boolean",
+      "default": false
+    },
+    "mtf_unit_id": {
+      "type": "string"
+    },
+    "theme": {
+      "type": "string",
+      "default": "dark"
+    },
+    "avatar_url": {
+      "type": "string"
+    },
+    "presence": {
+      "type": "string",
+      "enum": [
+        "ONLINE",
+        "OFFLINE",
+        "ON_MISSION"
+      ],
+      "default": "ONLINE"
+    },
+    "is_admin": {
+      "type": "boolean",
+      "default": false
+    },
+    "ui_sounds": {
+      "type": "boolean",
+      "default": true
+    },
+    "language": {
+      "type": "string",
+      "default": "fr"
+    },
+    "mdt_name": {
+      "type": "string"
+    },
+    "mdt_id": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "scp_id",
+    "password",
+    "full_name"
+  ]
+}

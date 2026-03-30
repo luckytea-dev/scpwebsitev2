@@ -1,0 +1,59 @@
+{
+  "name": "Mission",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "unit_assigned": {
+      "type": "string"
+    },
+    "agents_assigned": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Planned",
+        "Active",
+        "Completed",
+        "Failed"
+      ],
+      "default": "Planned"
+    },
+    "danger_level": {
+      "type": "string",
+      "enum": [
+        "Low",
+        "Medium",
+        "High",
+        "Extreme"
+      ],
+      "default": "Medium"
+    },
+    "location": {
+      "type": "string"
+    },
+    "start_date": {
+      "type": "string"
+    },
+    "end_date": {
+      "type": "string"
+    },
+    "report": {
+      "type": "string"
+    },
+    "mission_log": {
+      "type": "string"
+    },
+    "created_by_name": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "title"
+  ]
+}

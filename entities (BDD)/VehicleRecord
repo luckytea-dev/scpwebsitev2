@@ -1,0 +1,37 @@
+{
+  "name": "VehicleRecord",
+  "type": "object",
+  "properties": {
+    "plate": {
+      "type": "string"
+    },
+    "make": {
+      "type": "string"
+    },
+    "model": {
+      "type": "string"
+    },
+    "color": {
+      "type": "string"
+    },
+    "owner_name": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Normal",
+        "Wanted",
+        "Seized",
+        "Flagged"
+      ],
+      "default": "Normal"
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "plate"
+  ]
+}

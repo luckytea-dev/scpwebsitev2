@@ -1,0 +1,51 @@
+{
+  "name": "IncidentReport",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "severity": {
+      "type": "string",
+      "enum": [
+        "Minor",
+        "Moderate",
+        "Major",
+        "Critical"
+      ],
+      "default": "Minor"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Open",
+        "Investigating",
+        "Resolved",
+        "Classified"
+      ],
+      "default": "Open"
+    },
+    "reporter_id": {
+      "type": "string"
+    },
+    "reporter_name": {
+      "type": "string"
+    },
+    "image_url": {
+      "type": "string"
+    },
+    "linked_scp": {
+      "type": "string"
+    },
+    "signature": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "title",
+    "description"
+  ]
+}

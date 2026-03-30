@@ -1,0 +1,39 @@
+{
+  "name": "PersonnelNote",
+  "type": "object",
+  "properties": {
+    "agent_id": {
+      "type": "string"
+    },
+    "note_type": {
+      "type": "string",
+      "enum": [
+        "Note",
+        "Infraction",
+        "PsychEval",
+        "Medical"
+      ],
+      "default": "Note"
+    },
+    "content": {
+      "type": "string"
+    },
+    "author_name": {
+      "type": "string"
+    },
+    "severity": {
+      "type": "string",
+      "enum": [
+        "Info",
+        "Warning",
+        "Critical"
+      ],
+      "default": "Info"
+    }
+  },
+  "required": [
+    "agent_id",
+    "content",
+    "note_type"
+  ]
+}

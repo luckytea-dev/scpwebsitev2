@@ -1,0 +1,40 @@
+{
+  "name": "Camera",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "video",
+        "noise"
+      ]
+    },
+    "url": {
+      "type": "string"
+    },
+    "min_clearance": {
+      "type": "number",
+      "default": 1
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "ONLINE",
+        "OFFLINE",
+        "JAMMED"
+      ],
+      "default": "ONLINE"
+    },
+    "note": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "name",
+    "type",
+    "min_clearance"
+  ]
+}

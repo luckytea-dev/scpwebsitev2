@@ -1,0 +1,16 @@
+{
+  "name": "DispatchLog",
+  "type": "object",
+  "properties": {
+    "action": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "action",
+    "message"
+  ]
+}

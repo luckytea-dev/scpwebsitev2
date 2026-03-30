@@ -1,0 +1,56 @@
+{
+  "name": "CivilRecord",
+  "type": "object",
+  "properties": {
+    "first_name": {
+      "type": "string"
+    },
+    "last_name": {
+      "type": "string"
+    },
+    "date_of_birth": {
+      "type": "string"
+    },
+    "nationality": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Normal",
+        "Surveillance",
+        "Detention",
+        "Released",
+        "Wanted"
+      ],
+      "default": "Normal"
+    },
+    "threat_level": {
+      "type": "string",
+      "enum": [
+        "None",
+        "Low",
+        "Medium",
+        "High",
+        "Extreme"
+      ],
+      "default": "None"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "photo_url": {
+      "type": "string"
+    },
+    "linked_scp": {
+      "type": "string"
+    },
+    "mtf_assigned": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "first_name",
+    "last_name"
+  ]
+}

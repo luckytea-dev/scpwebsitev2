@@ -1,0 +1,21 @@
+{
+  "name": "SiteStatus",
+  "type": "object",
+  "properties": {
+    "level": {
+      "type": "string",
+      "enum": [
+        "Normal",
+        "Elevated",
+        "Lockdown",
+        "Apollyon"
+      ]
+    },
+    "description": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "level"
+  ]
+}
